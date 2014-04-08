@@ -1,0 +1,56 @@
+.justI18n_demo_row {
+  font-size: 0px;
+  padding: 10px 0px;
+}
+
+.justI18n_demo_flag {
+  display: inline-block;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 45px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.85) inset, 0px 0px 3px rgba(0,0,0,0.5) inset;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.justI18n_demo_flag:hover {
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.5) inset, 0px 0px 10px rgba(255,255,255,0.85) inset;
+}
+
+.justI18n_demo_flagCurrent {
+  height: 40px;
+  width: 60px;
+}
+
+.justI18n_demo_item {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  max-width: 25%;
+  text-align: center;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.justI18n_demo_item img {
+  display: block;
+  width: 100%;
+  border: 3px solid #ffffff;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+.justI18n_demo_item span {
+  display: block;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .justI18n_demo_item span {
+    padding: 10px 0px;
+    font-size: 10px;
+  }
+}
+

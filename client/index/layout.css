@@ -1,0 +1,195 @@
+.layoutHeader {
+  position: relative;
+  /*background: #c0c0c0;*/
+  height: 200px;
+  max-width: 960px;
+  margin: 0px auto 40px auto;
+  /*box-shadow: 0px -10px 10px -10px rgba(0,0,0,0.25) inset;*/
+  /*border-bottom: 1px solid #808080;*/
+}
+
+.layoutHeaderBubble {
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  background: #f0f0f0;
+  border-radius: 100px;
+  border: 1px solid #808080;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+  font-size: 12px;
+  color: #a0a0a0;
+
+
+}
+
+.layoutHeaderBubbleIcon {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  right: 18px;
+  bottom: 18px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  display: block;
+  /*background: #f0f0f0;*/
+  border-radius: 100px;
+  /*border: 1px solid #808080;*/
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.25) inset;
+  font-size: 12px;
+
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.layoutHeaderBubble:hover {
+  transform: rotate(-12deg);
+  /*color: #ffffff;*/
+  /*text-shadow: 1px 0px 1px #ffffff;*/
+}
+
+.layoutHeaderBubble:hover .layoutHeaderBubbleIcon {
+  background: #ffffff;
+}
+
+.layoutHeaderBubbleActive {
+  color: #d00040;
+}
+
+.layoutHeaderBubbleActive .layoutHeaderBubbleIcon {
+  background: #d00040;
+  /*box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.25) inset;*/
+}
+
+.layoutTitle {
+  display: block;
+  position: absolute;
+  right: 20px;
+  text-align: right;
+  top: 64px;
+  height: 200px;
+}
+
+.titleTitle {
+  font-size: 64px;
+}
+
+.titleHeadline {
+  display: block;
+  font-size: 16px;
+  color: #a0a0a0;
+}
+
+.layoutWrap {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0px 20px;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+.layoutContent {
+  /*background: rgba(200,0,0,0.125); */
+  /*position: absolute;*/
+  margin-left: 200px;
+  margin-right: 20px;
+  /*right: 20px;*/
+  /*left: 240px;*/
+  width: auto;
+  padding-bottom: 64px;
+}
+
+.layoutSidemenu {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 160px;
+}
+
+
+
+.layoutMenu {
+  text-align: center;
+  font-size: 12px;
+  width: 160px;
+}
+
+.layoutMenuItem {
+  font-size: 12px;
+  padding: 0px 20px;
+
+  display: block;
+  color: #a0a0a0;
+  cursor: default;
+  line-height: 20px;
+  text-align: left;
+}
+
+.layoutMenuSubItem {
+  font-size: 10px;
+  padding: 0px 20px 0px 40px;
+}
+
+.layoutMenuSubbItem {
+  font-size: 8px;
+  padding: 0px 20px 0px 50px;
+}
+
+.layoutMenuItem:hover, .layoutMenuLink:hover {
+  background: #ffffff;
+}
+
+.layoutMenuDivider {
+  height: 20px;
+}
+
+.layoutMenuLink {
+  display: block;
+  text-align: left;
+  color: #707070;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0px 20px;
+  cursor: default;
+}
+
+.layoutMenuLink i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.layoutMenuCircle {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  display: inline-block;
+  background: #f0f0f0;
+  border-radius: 100px;
+  
+  font-size: 10px;
+  color: #c0c0c0;
+}
+
+.layoutMenuCircle img {
+  /*position: absolute;*/
+  width: 100px;
+  height: 100px;
+  /*left: 30px;*/
+  /*top: 30px;*/
+  width: auto;
+  height: auto;
+  text-align: center;
+  /*display: block;*/
+  border-radius: 100px;
+  border: 1px solid #808080;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+}
+
+.layoutMenuCircleLabel {
+  cursor: default;
+}
+
+

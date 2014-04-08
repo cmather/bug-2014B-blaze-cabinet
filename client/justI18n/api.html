@@ -1,0 +1,108 @@
+<template name="justI18n_api">
+
+<h1>Overview</h1>
+
+<ul>
+  <li>To get text, use <tt>i18n(label)</tt> or <tt>&#123;&#123;i18n label&#125;&#125;</tt></li>
+  <li>To set translation map, use <tt>i18n.map(languageCode, map)</tt></li>
+  <li>To set current language, use <tt>i18n.setLanguage(languageCode)</tt></li>
+  <li>You'd also like to know <tt>i18n.setDefaultLanguage(languageCode)</tt> and <tt>i18n.getLanguage()</tt></li>
+</ul>
+
+<h1 id="api">API</h1>
+
+
+
+<h2 class="uni_api_entry">i18n(label)</h2>
+Get your localized text in Javascript.
+<pre class="uni_command">
+i18n('store.purchase');
+</pre>
+
+
+<h2 class="uni_api_entry">&#123;&#123;i18n label&#125;&#125;</h2>
+Get your localized text in Handlebars.
+<pre class="uni_command">
+&#123;&#123;i18n "store.purchase"&#125;&#125;
+</pre>
+
+
+
+<h2 class="uni_api_entry">i18n.map(language, map)</h2>
+Add new text map.
+<pre class="uni_command">
+i18n.map('en_US', {
+  hello: 'world',
+  store: {
+    purchase: 'buy now',
+    basket: 'basket',
+  },
+});
+</pre>
+You can use flat map if you prefer, or combine both methods.
+<pre class="uni_command">
+i18n.map('en_US', {
+  'hello': 'world',
+  'store.purchase': 'buy now',
+  'store.basket': 'basket',
+  'fruits': {
+    'apple': 'apple',
+    'banana': 'banana',
+  },
+});
+</pre>
+
+
+<h2 class="uni_api_entry">i18n.setLanguage(language)</h2>
+Set your current language.
+<pre class="uni_command">
+i18n.setLanguage('en_US')
+</pre>
+
+
+
+<h2 class="uni_api_entry">i18n.setDefaultLanguage(language)</h2>
+Set your default language. This is the base language,
+if there is no translation to the currently chosen one,
+default language will be used instead.
+<br/>
+Defaults to <tt>en</tt>
+<pre class="uni_command">
+i18n.setDefaultLanguage('en_US');
+</pre>
+
+<h2 class="uni_api_entry">i18n.getLanguage()</h2>
+Get the current language code.
+<div class="uni_terminal">
+<pre class="uni_command">
+i18n.getLanguage();
+</pre>
+<pre class="uni_result">
+'en_US'
+</pre>
+</div>
+
+<h1>Advanced</h1>
+
+<h2 class="uni_api_entry">i18n.showMissing(missing)</h2>
+Decide whether to show a warning when there's no translation in the current and default language.
+Useful for development purposes.
+<br/>
+Possible arguments:
+{{#markdown}}
+- **`false`** &nbsp; &mdash; &nbsp; Display nothing (default).
+- **`true`** &nbsp; &mdash; &nbsp; Display the placeholder in default format, `[<%= label %>]`.
+- **`String`** &nbsp; &mdash; &nbsp; Display the placeholder in custom format.
+  The given string will be used as underscore template with the following parameters:
+    - `label`
+    - `language`
+    - `defaultLanguage`
+{{/markdown}}
+<pre class="uni_command">
+i18n.showMissing('[no translation for "&lt;%= label %&gt;" in &lt;%= language %&gt;]');
+</pre>
+
+
+
+
+</template>

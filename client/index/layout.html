@@ -1,0 +1,35 @@
+<template name="layout">
+  <div class="layoutHeader"><a name="top">&nbsp;</a>
+    <div class="layoutTitle">
+      {{> yield region='title'}}
+    </div>
+    {{#each bulbs}}
+      <a href="{{pathFor name}}"
+          class="layoutHeaderBubble {{#if bulbActive}}layoutHeaderBubbleActive{{/if}}"
+          style="left: {{x}}px; top: {{y}}px; height: {{s}}px; width: {{s}}px;"
+          data-a="{{a}}">
+        <span class="layoutHeaderBubbleLabel">{{human}}</span>
+        <span class="layoutHeaderBubbleIcon" style="font-size: {{fs}}px; line-height: {{lh}}px;">{{#if icon}}<i class="fa fa-{{icon}}"></i>{{/if}}</span>
+      </a>
+    {{/each}}
+  </div>
+  <div class="layoutWrap">
+    <div class="layoutContent">
+      {{> yield}}
+    </div>
+    <div class="layoutSidemenu">
+      <div class="layoutMenu">
+        {{> yield region='menu'}}
+        <div class="layoutMenuDivider"></div>
+        <div class="layoutMenuCircle">
+          <img src="https://www.gravatar.com/avatar/7bb737022e7649fed792eea037997982?s=100"/><br/>
+          <span class="layoutMenuCircleLabel">made by Hubert OG</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</template>
+
+
+

@@ -1,0 +1,59 @@
+h1 {
+  margin-top: 48px;
+}
+
+.uni_api_entry {
+  background: #ffffa0;
+  padding: 10px;
+  border-bottom: 1px solid #303030;
+  border-top: 1px solid #303030;
+  font-family: monospace;
+  margin-top: 64px;
+}
+
+.uni_api_sub_entry {
+  padding: 10px;
+  border-bottom: 1px solid #303030;
+  border-top: 1px solid #303030;
+  font-family: monospace;
+  margin-top: 64px;
+}
+
+
+.uni_desc, .uni-code-desc {
+  color: #f8f8f8;
+  font-style: italic;
+  font-weight: normal;
+  background: #c0c0c0;
+  line-height: 18px;
+  padding: 0px 10px;
+}
+
+.uni_command, .uni-code-code {
+  background: #303030;
+  color: #f0f0f0;
+  padding: 10px 20px;
+  margin: 20px 0px;
+}
+
+.uni_result, .uni-code-result {
+  background: #ffffff;
+  color: #303030;
+  padding: 10px 20px;
+  margin: 20px 0px;
+}
+
+.uni_terminal, .uni-code-terminal {
+  margin: 20px 0px;
+}
+
+.uni_terminal .uni_command, .uni_terminal .uni_result, .uni_terminal .uni_desc {
+  margin: 0px;
+}
+
+
+.uni-code-terminal .uni-code-code, .uni-code-terminal .uni-code-result, .uni-code-terminal .uni-code-desc {
+  margin: 0px;
+}
+
+

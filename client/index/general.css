@@ -1,0 +1,40 @@
+.general_demoBox {
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+}
+
+.general_demoDesc {
+  padding: 5px;
+  text-align: right;
+  font-style: italic;
+  color: #c0c0c0;
+}
+
+.general_demoDesc a {
+  color: #808080;
+}
+
+.general_demoDesc a:hover {
+  text-decoration: underline;
+}
+
+tt {
+  display: inline-block;
+  background: #e0e0e0;
+  padding: 3px 10px;
+  border: 1px dashed #d0d0d0; 
+}
+
+.general_warning {
+  background: #ffffa0;
+  padding: 10px;
+  border-bottom: 1px solid #303030;
+  border-top: 1px solid #303030;
+  font-family: monospace;
+  margin-top: 64px;
+}
+
+

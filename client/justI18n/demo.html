@@ -1,0 +1,34 @@
+<template name="justI18n_demo">
+  <div class="general_demoBox">
+    <div class="justI18n_demo_row">
+      <!-- Flag images from http://flagpedia.net/ -->
+      <span class="justI18n_demo_flag {{#if current 'en'}}justI18n_demo_flagCurrent{{/if}}"
+            data-language="en"
+            style="background-image: url('/files/just-i18n/en.png');"></span>
+      <span class="justI18n_demo_flag {{#if current 'pl'}}justI18n_demo_flagCurrent{{/if}}"
+            data-language="pl"
+            style="background-image: url('/files/just-i18n/pl.png');"></span>
+      <span class="justI18n_demo_flag {{#if current 'fr'}}justI18n_demo_flagCurrent{{/if}}"
+            data-language="fr"
+            style="background-image: url('/files/just-i18n/fr.png');"></span>
+    </div>
+
+    <div class="justI18n_demo_row">
+      <span class="justI18n_demo_item"><img src="/files/just-i18n/turtle.png"><span>{{i18n 'animals.turtle'}}</span></span>
+      <span class="justI18n_demo_item"><img src="/files/just-i18n/butterfly.png"><span>{{i18n 'animals.butterfly'}}</span></span>
+      <span class="justI18n_demo_item"><img src="/files/just-i18n/snail.png"><span>{{i18n 'animals.snail'}}</span></span>
+      <br/>
+      <span class="justI18n_demo_item"><img src="/files/just-i18n/flower.png"><span>{{i18n 'flower'}}</span></span>
+      <span class="justI18n_demo_item"><img src="/files/just-i18n/fruits.png"><span>{{i18n 'fruits'}}</span></span>
+      <span class="justI18n_demo_item"><img src="/files/just-i18n/pineapple.png"><span>{{i18n 'fruits.pineapple'}}</span></span>
+    </div>
+
+    <div class="general_demoDesc">
+      French language is a demo of an incomplete map.
+      <!-- See the source code on <a target="_blank" href="https://github.com/subhog/cabinet/blob/master/client/cabinet/justI18n">GitHub</a>. -->
+    </div>
+  </div>
+
+</template>
+
+
